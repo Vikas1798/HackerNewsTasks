@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./Global/Header";
+import Footer from "./Global/Footer";
+import Router from "./Navigation/Router";
+import "bootstrap/dist/css/bootstrap.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+return(
+        <React.Fragment>
+            <Header />
+                <main>
+                    <div className="container-fluid">
+                        <div className="row d-flex justify-content-center">
+                            <div className="col-10">
+                                <Router />
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            <Footer />
+        </React.Fragment>
+    );
 }
 
 export default App;

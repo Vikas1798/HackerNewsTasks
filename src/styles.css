@@ -1,0 +1,126 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+body {
+    font-size: 14px;
+}
+
+a {
+    color: #000;
+}
+
+a:hover,
+a:focus {
+    color: #000;
+}
+
+h1,
+p {
+    font-family: Lato;
+}
+
+main {
+    min-height: 400px;
+}
+
+.card {
+    height: 160px;
+    margin-bottom: 30px;
+}
+
+.card-long {
+    padding-bottom: 5px;
+}
+
+.card-long .sub {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 7pt;
+    color: #828282;
+}
+
+.card-long:last-child {
+    padding-bottom: 20px;
+}
+
+main {
+    background-color: rgb(246, 246, 239);
+}
+
+.input-box {
+    position: relative;
+}
+
+.form-control {
+    caret-color: rgb(255, 102, 0);
+    border: none;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0 40px;
+    line-height: 36px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: 0;
+    background: white;
+    /* color: red; */
+}
+
+.form-control::placeholder {
+    color: rgb(104, 103, 103);
+}
+
+.form-control:hover {
+    background: white;
+    border-color: rgb(255, 102, 0);
+    outline: none;
+    border: none;
+}
+
+.form-control:focus {
+    /* border-color: rgb(255, 255, 255); */
+    outline: none;
+    border: none;
+}
+
+.search-icon {
+    mask: url('./Assets/search.svg');
+    position: absolute;
+    background: rgb(255, 102, 0);
+    mask-size: cover;
+    left: 25px;
+    position: absolute;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    -webkit-mask-size: cover;
+    transition: ease-inv .3s;
+    filter: invert(1);
+
+}
+
+footer {
+    /* border-top: 2px solid rgb(255, 102, 0); */
+    background-color: rgb(246, 246, 239);
+    font-size: 12px;
+}
+
+.empty-data {
+    font-weight: 600;
+    color: rgb(255, 102, 0);
+}
+
+.bg_orange {
+    background-color: rgb(255, 102, 0);
+}
+
+.bt_padding {
+    padding: .5rem 1rem;
+    min-height: 40px;
+}
+
+.pl_1rem {
+    padding-left: 1rem;
+}
+
+.pr_1rem {
+    padding-right: 1rem;
+}
